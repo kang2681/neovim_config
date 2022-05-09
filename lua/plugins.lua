@@ -13,8 +13,6 @@ packer.startup({
             "ellisonleao/gruvbox.nvim",
             requires = { "rktjmp/lush.nvim" },
         })
-        -- zephyr
-        -- use("glepnir/zephyr-nvim")
         -- nord
         use("shaunsingh/nord.nvim")
         -- onedark
@@ -24,7 +22,7 @@ packer.startup({
         -------------------------------------------------------
         -- 侧边栏 nvim-tree --
         use({
-            "kyazdani42/nvim-tree.lua", 
+            "kyazdani42/nvim-tree.lua",
             requires = "kyazdani42/nvim-web-devicons",
         })
         -- -------------------
@@ -83,6 +81,8 @@ packer.startup({
         use("folke/lua-dev.nvim")
         -- JSON 增强
         use("b0o/schemastore.nvim")
+        -- golang 插件
+        use("fatih/vim-go")
     end,
     config = {
         -- 并发数限制
