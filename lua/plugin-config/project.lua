@@ -10,6 +10,7 @@ if not status then
     return
 end
 
+-- nvim-tree 支持
 vim.g.nvim_tree_respect_buf_cwd = 1
 project.setup({
       detection_methods = { "pattern" },
@@ -26,6 +27,7 @@ project.setup({
         "Makefile",
         "go.mod",
     },
+    silent_chdir = true,
 })
 
 local status_telescope, telescope = pcall(require, "telescope")

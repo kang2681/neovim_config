@@ -10,13 +10,13 @@ lualine.setup({
         theme = "tokyonight",
         -- 分割线
         component_separators = {
-          left = "|",
-          right = "|",
+            left = "|",
+            right = "|",
         },
         -- https://github.com/ryanoasis/powerline-extra-symbols
         section_separators = {
-          left = " ",
-          right = "",
+            left = " ",
+            right = "",
         },
         globalstatus = true,
     },

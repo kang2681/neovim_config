@@ -19,7 +19,7 @@ local opts = {
             workspace = {
                 -- Make the server aware of Neovim runtime files
                 library = vim.api.nvim_get_runtime_file("", true),
-                checkThirdParty = false,
+                checkThirdParty = true,
             },
             -- Do not send telemetry data containing a randomized but unique identifier
             telemetry = {
@@ -50,9 +50,10 @@ local opts = {
 
 -- 查看目录等信息
 -- print(vim.inspect(server))
+
 return {
-    on_setup = function(server)
-        opts = require("lua-dev").setup({ lspconfig = opts })
-        server:setup(opts)
-    end,
+  on_setup = function(server)
+    opts = require("lua-dev").setup({ lspconfig = opts })
+    server.setup(opts)
+  end,
 }

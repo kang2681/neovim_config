@@ -2,8 +2,8 @@
 -- local nvim_tree = require'nvim-tree'
 local status, nvim_tree = pcall(require, "nvim-tree")
 if not status then
-  vim.notify("没有找到 nvim-tree")
-  return
+    vim.notify("没有找到 nvim-tree")
+    return
 end
 -- 列表操作快捷键
 local list_keys = require("keybindings").nvimTreeList
@@ -23,8 +23,8 @@ nvim_tree.setup({
     },
     -- 隐藏 .文件 和 node_modules 文件夹
     filters = {
-        dotfiles = true,
-        custom = { "node_modules" },
+        dotfiles = false,
+        custom = { "node_modules", "vendor" },
     },
     view = {
         -- 宽度
@@ -39,7 +39,7 @@ nvim_tree.setup({
             list = list_keys,
         },
         -- 不显示行数
-        number = false,
+        number = true,
         relativenumber = false,
         -- 显示图标
         signcolumn = "yes",
