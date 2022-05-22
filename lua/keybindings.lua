@@ -149,7 +149,7 @@ pluginKeys.mapLSP = function(mapbuf)
     --[[
     mapbuf('n', 'gd', '<cmd>Lspsaga preview_definition<CR>', opt)
     --]]
-    mapbuf("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
+    mapbuf("n", "<F2>", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
     --[[
     mapbuf("n", "gh", "<cmd>Lspsaga hover_doc<cr>", opt)
     Lspsaga 替换 gh
