@@ -52,8 +52,8 @@ local opts = {
 -- print(vim.inspect(server))
 
 return {
-  on_setup = function(server)
-    opts = require("lua-dev").setup({ lspconfig = opts })
-    server.setup(opts)
-  end,
+    on_setup = function(server)
+        opts = require("lua-dev").setup({ lspconfig = opts })
+        server.setup(opts)
+    end,
 }
