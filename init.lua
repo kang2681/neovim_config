@@ -16,7 +16,7 @@ require("plugin-config.dashboard")
 require("plugin-config.project")
 -- 内置LSP
 require("lsp.setup")
---require("lsp.cmp")
+require("lsp.cmp")
 --require("lsp.ui")
 -- require("lsp.formatter")
 --require("lsp.null-ls")

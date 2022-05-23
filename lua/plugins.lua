@@ -78,7 +78,22 @@ packer.startup({
         use('neovim/nvim-lspconfig')
         -- Lua 增强
         use("folke/lua-dev.nvim")
+        -- 补全引擎
+        use("hrsh7th/nvim-cmp")
+         -- Snippet 引擎
+        use("hrsh7th/vim-vsnip")
+        use("hrsh7th/cmp-vsnip")
+        use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
+        use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
+        use("hrsh7th/cmp-path") -- { name = 'path' }
+        use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
+        -- 常见编程语言代码段
+        use("rafamadriz/friendly-snippets")
+        -- JSON 增强
+        use("b0o/schemastore.nvim")
         -------------------- LSP --------------------
+
+
 
         if packer_bootstrap then
             require('packer').sync()
