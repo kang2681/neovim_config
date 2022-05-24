@@ -12,6 +12,7 @@ local servers = {
     sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
     bashls = require("lsp.config.bash"),
     jsonls = require("lsp.config.json"),
+    gopls = require("lsp.config.go"),
     -- pyright = require("lsp.config.pyright"),
     -- html = require("lsp.config.html"),
     -- cssls = require("lsp.config.css"),

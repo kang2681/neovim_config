@@ -91,6 +91,9 @@ packer.startup({
         use("rafamadriz/friendly-snippets")
         -- JSON 增强
         use("b0o/schemastore.nvim")
+        -- UI 增强
+        use("onsails/lspkind-nvim")
+        use("tami5/lspsaga.nvim")
         -------------------- LSP --------------------
 
 
