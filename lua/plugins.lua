@@ -71,6 +71,14 @@ packer.startup({
         -- project
         use("ahmedkhalf/project.nvim")
 
+        -- indent-blankline
+        use("lukas-reineke/indent-blankline.nvim")
+        -- Comment
+        use("numToStr/Comment.nvim")
+        -- nvim-autopairs
+        use("windwp/nvim-autopairs")
+
+
         -------------------- LSP --------------------
         -- use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
         use({ "williamboman/nvim-lsp-installer"})
@@ -94,6 +102,8 @@ packer.startup({
         -- UI 增强
         use("onsails/lspkind-nvim")
         use("tami5/lspsaga.nvim")
+        -- 代码格式化
+        use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
         -------------------- LSP --------------------
 
 
