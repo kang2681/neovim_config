@@ -75,3 +75,25 @@ sudo apt-get install xclip
 :LspUninstallAll [--no-confirm] - uninstalls all language servers
 :LspInstallLog - opens the log file in a new tab window
 :LspPrintInstalled - prints all installed language servers
+
+
+# VIM 操作
+
+- 打开文件
+   ```
+   vim  test.log
+   ```
+   如果已经打开了vim使用如下命令加载一个文件
+   ```
+   :e test.lua 
+   ```
+   ```
+   :w   表示写（write）的意思
+   :w xxx.lua 另存为新文件xxx.lua
+   :q 表示退出 （quit）的意思
+   :wq 保存退出
+   :q! 强制退出(可能导致修改没有保存)  感叹号表示强制执行
+   :e  表示 :edit
+   :w  表示 :write
+   :q  表示 :quit
+   ```
