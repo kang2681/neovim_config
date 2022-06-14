@@ -119,7 +119,7 @@ packer.startup({
         -- snapshot = "v1",
 
         -- 最大并发数
-        max_jobs = 16,
+        max_jobs = 15,
         -- 自定义源
         git = {
             -- default_url_format = "https://hub.fastgit.xyz/%s",
@@ -146,13 +146,13 @@ pcall(
     ]]
 )
 
-in_wsl = os.getenv('WSL_DISTRO_NAME') ~= nil
+-- in_wsl = os.getenv('WSL_DISTRO_NAME') ~= nil
 
-if in_wsl then
-    vim.g.clipboard = {
-        name = 'wsl clipboard',
-        copy =  { ["+"] = { "clip.exe" },   ["*"] = { "clip.exe" } },
-        paste = { ["+"] = { "nvim_paste" }, ["*"] = { "nvim_paste" } },
-        cache_enabled = true
-    }
-end
+-- if in_wsl then
+--     vim.g.clipboard = {
+--         name = 'wsl clipboard',
+--         copy =  { ["+"] = { "clip.exe" },   ["*"] = { "clip.exe" } },
+--         paste = { ["+"] = { "nvim_paste" }, ["*"] = { "nvim_paste" } },
+--         cache_enabled = true
+--     }
+-- end
